@@ -1,6 +1,6 @@
 # KDM
 
-THE GAME
+THE GAME:
 What is Number Mind?
 The game Number Mind is a variant of the well-known game Master Mind.
 Instead of colored balls, you must guess a secret sequence of digits. After
@@ -9,7 +9,7 @@ So, if the sequence was 1234 and you guessed 2036, you’d be told that you have
 one correct digit; however, you would NOT be told that you also have another
 digit in the wrong place.
 
-THE EXAMPLE
+THE EXAMPLE:
 For instance, given the following guesses for a 5-digit secret sequence,
 90342 ; 2 correct
 70794 ; 0 correct
@@ -19,7 +19,7 @@ For instance, given the following guesses for a 5-digit secret sequence,
 12531 ; 1 correct
 The correct sequence is 39542 and it is unique.
 
-THE TASK
+THE TASK:
 1. Write a program that plays the Number Mind game against itself.
 2. Generate a random sequence of n digits (the secret code)
 3. Generate a proposed solution based on the previous proposals
@@ -28,7 +28,7 @@ sequences;
 4. Computes the feedback (x correct) on the generated proposal and
 if there are n correct guesses exit, if not generate new code.
 
-THE LOGIC
+THE LOGIC:
 P ( i, j ) = Digit j is in position i
 The position i can be from 1 to n, meaning i = {1, … ,n}
 The digit j can be from 0 to 9, because it has to be a single digit.
@@ -37,7 +37,7 @@ Propositional variables => 10 * n
 Possible codes =>10ⁿ
 Having the same digit multiple times is possible, with replacement.
 
-THE RULES
+THE RULES:
 We have to specify that at each place there must be exactly one
 digit!
 → At least one digit in every position
